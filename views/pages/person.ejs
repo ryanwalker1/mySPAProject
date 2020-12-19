@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('../partials/head'); %>
+	</head>
+	<body class="container">
+		<header><%- include('../partials/header'); %></header>
+
+		<main>
+			<div class="container">
+				<h1>Employee's Detail</h1>			                         
+
+               <!-- <a class="btn btn-primary mtn-sm" href="directory/<%= employee[0]%>">View Profile</a>  --> 
+			<!-- <div class="row justify-content-between"></div>  --> 
+         <!-- <img src="<%= employee[1].picture %>" class="col-3 p-1 m-2 bg-light"> -->	
+         
+             <%=employee.firstName %> <%=employee.lastName  %><br>
+			 <%=employee.email  %>
+			 <%=employee[0]  %>	
+
+			
+			
+          <!-- YOUR EJS OR HANDLEBARS TEMPLATE LITERALS GO HERE -->
+
+           <!-- Try mocking up some Bootstrap cards or columns with some hard coded data to get an idea of how your templates should look. -->
+				
+			</div>
+		</main>
+
+		<footer><%- include('../partials/footer'); %></footer>
+	</body>
+</html>
